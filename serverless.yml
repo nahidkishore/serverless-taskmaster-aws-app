@@ -1,7 +1,7 @@
-org: trainwithshubham
-app: testing-end-to-end
-service: serverless-taskmaster-aws-app
-frameworkVersion: '3'
+org: nahid0002
+app: serverless-taskmaster-aws-app
+service: serverless-taskmaster-app
+frameworkVersions: '3'
 
 provider:
   name: aws
@@ -12,7 +12,7 @@ provider:
       Action:
         - dynamodb:*
       Resource:
-        - arn:aws:dynamodb:us-east-1:626072240565:table/KaamKaro
+        - arn:aws:dynamodb:us-east-1:835208014303:table/KaamKaro
 
 functions:
   hello:
@@ -39,6 +39,7 @@ functions:
       - httpApi:
           path: /kaam/{id}
           method: put
+
 
 resources:
   Resources:
